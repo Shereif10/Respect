@@ -1,0 +1,143 @@
+{
+  "navigation": [
+    { "id": 1, "label": "Home", "target": "home" },
+    { "id": 2, "label": "Values", "target": "values" },
+    { "id": 3, "label": "About Us", "target": "about" },
+    { "id": 4, "label": "Services", "target": "services" },
+    { "id": 5, "label": "Case Studies", "target": "case-studies" },
+    { "id": 6, "label": "Contact", "target": "contact" }
+  ],
+
+  "home": {
+    "hero": {
+      "title": {
+        "text": "Respect the past Shape the future....",
+        "highlightLetter": "R"
+      },
+      "description": [
+        "We build respectable identities… that grow and influence.",
+        "We connect value, design, and people."
+      ]
+    },
+
+    "highlights": [
+      {
+        "id": 1,
+        "text": "Clear processes based on a professional methodology"
+      },
+      {
+        "id": 2,
+        "text": "A team that believes in calm, respect, and results."
+      },
+      {
+        "id": 3,
+        "text": "An identity inspired by cultural values and humanistic meaning"
+      }
+    ],
+
+    "coreValuesIntro": {
+      "title": "Core values",
+      "description": "Values upon which identity is built… and are reflected in every detail of the work"
+    },
+
+    "coreValuesCarousel": [
+      {
+        "id": 1,
+        "title": "Humility",
+        "description": "Giving without expecting anything in return..."
+      },
+      {
+        "id": 2,
+        "title": "Peace",
+        "description": "Is the bla bla bla"
+      },
+      {
+        "id": 3,
+        "title": "Love",
+        "description": "The heart sees and thinks... before it beats"
+      },
+      {
+        "id": 4,
+        "title": "Forgiveness",
+        "description": "An initiative that opens doors... before they close"
+      }
+    ],
+
+    "ourWork": {
+      "title": "Our work, respectfully done",
+      "items": [
+        { "id": 1, "title": "Websites & SEO" },
+        { "id": 2, "title": "Content Production" },
+        { "id": 3, "title": "Marketing Strategy" },
+        { "id": 4, "title": "Paid Ads" },
+        { "id": 5, "title": "Websites & SEO" },
+        { "id": 6, "title": "Websites & SEO" }
+      ]
+    },
+
+    "whyChooseUs": {
+      "title": "Why choose us?",
+      "items": [
+        { "id": 1, "text": "Real values — not slogans" },
+        { "id": 2, "text": "Measurable results" },
+        { "id": 3, "text": "A respectable team that knows what it's doing" },
+        { "id": 4, "text": "Simple design... but profound" },
+        { "id": 5, "text": "A meaning-based strategy" }
+      ]
+    },
+
+    "ourClients": {
+      "title": "Our Client",
+      "logos": [
+        {
+          "id": 1,
+          "name": "Client One",
+          "logo": "/assets/clients/client-1.png"
+        },
+        {
+          "id": 2,
+          "name": "Client Two",
+          "logo": "/assets/clients/client-2.png"
+        },
+        {
+          "id": 3,
+          "name": "Client Three",
+          "logo": "/assets/clients/client-3.png"
+        }
+      ]
+    },
+
+    "closingSlogan": {
+      "text": "Respect the past Shape the future....",
+      "highlightLetter": "R"
+    },
+
+    "footer": {
+      "contacts": {
+        "title": "Contacts",
+        "email": "contact@respect.com",
+        "phone": "+20 123 456 789"
+      },
+      "socials": [
+        {
+          "id": 1,
+          "name": "Facebook",
+          "url": "https://facebook.com/respect",
+          "icon": "facebook"
+        },
+        {
+          "id": 2,
+          "name": "LinkedIn",
+          "url": "https://linkedin.com/company/respect",
+          "icon": "linkedin"
+        },
+        {
+          "id": 3,
+          "name": "Instagram",
+          "url": "https://instagram.com/respect",
+          "icon": "instagram"
+        }
+      ]
+    }
+  }
+}
