@@ -49,7 +49,7 @@
       {
         "id": 2,
         "title": "Peace",
-        "description": "Is the bla bla bla"
+        "description": "Values ​​upon which identity is built… and are reflected in every detail"
       },
       {
         "id": 3,
@@ -60,6 +60,11 @@
         "id": 4,
         "title": "Forgiveness",
         "description": "An initiative that opens doors... before they close"
+      },
+      {
+        "id": 5,
+        "title": "Humanity",
+        "description": "Giving without expecting anything in return…"
       }
     ],
 

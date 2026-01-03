@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+:root {
+  --color-background: #fff8f0;
+  --color-primary: #00770e;
+  --color-secondary: #efba43;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--color-background);
+}
+
+.mainContainer{
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* ------------- */
+/* الديف الكبيرة */
+.navbar-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+/* الصورة الصفراء */
+.navbar-shape {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 145px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* الديف المتسنترة */
+.navbar-inner {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+/* الشريط الأخضر */
+.navbar-green {
+  background-color: var(--color-primary);
+  width: 94%;
+  padding: 25px 128px;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom-left-radius: 212px;
+  position: relative;
+  z-index: 1;
+}
+
+/* اللينكات */
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  color: white;
+  font-size: 32px;
+  white-space: nowrap;
+}
+
+.nav-links li.active {
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+
+/* ------------- */
+.green {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--color-primary);
+  border-bottom-left-radius: 96px;
+  padding: 16px 0;
+}
+
+.green-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.green-track span {
+  white-space: nowrap;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #EAF0E8;
+  padding-right: 80px; /* مسافة بين التكرارين */
+}
+
+.green:hover .green-track {
+  animation-play-state: paused;
+}
+
+
+/* Animation */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* -------------- */
+
+.yellowCards {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+}
+
+.yellow1 { flex: 2; }
+.yellow2 { flex: 7; }
+.yellow3 { flex: 3; }
+
+.yellowCards > div {
+  background-color: #efba43;
+  padding: 24px 32px;
+  overflow: hidden; /* 👈 مهم للماركي */
+}
+
+.marquee-card {
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-card 12s linear infinite;
+}
+
+.marquee-track span {
+  white-space: nowrap;
+  padding-right: 40px;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.marquee-card:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.yellow2 span{
+  font-size: 32px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--color-primary);
+}
+
+.yellow2, .yellow3 {
+  border-radius: 8px 8px 8px 96px;
+}
+
+.yellow1{
+  border-radius:15px 8px 8px 15px;
+}
+
+
+/* الحركة */
+@keyframes marquee-card {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------------- */
+
+/* السكشن كله */
+.core-values {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+/* الصف اللي فيه الكروت */
+.cards-row {
+  display: flex;
+  gap: 24px;
+}
+
+/* الكارت */
+.card {
+  width: 240px;
+  height: 320px;
+  background: #fff8f0;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+
+  transition:
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.6s ease;
+
+  opacity: 0.5;
+
+  will-change: transform;
+}
+
+.card.active {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+
+/* الصورة */
+.card img {
+  width: 80px;
+
+  /* تخلي الصورة في النص عموديًا */
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* العنوان تحت شمال */
+.card h4 {
+  margin-top: auto;          /* ينزل لتحت */
+  align-self: flex-start;    /* شمال */
+
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+
+
